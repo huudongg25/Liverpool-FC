@@ -1,0 +1,38 @@
+:root {
+    --main-color: #dc0714;
+    --border-color: #ffffff33;
+    --text-color : #fff;
+    --white-color : #fff;
+    --black-color: #0c0c0c;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+/* ====animation====== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
