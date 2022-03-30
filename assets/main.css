@@ -62,6 +62,7 @@
 
 .sub_nav {
     position: absolute;
+    width: 100%;
     background-color: rgb(12, 1, 1);
     display: none;
     flex-direction: column;
@@ -69,7 +70,7 @@
     list-style: none;
     border-radius: 3px;
     z-index: 1;
-    min-width: 200%;
+    min-width: 150%;
     margin-left: -15px;
     box-shadow: 0 0 2px #333;
 }
@@ -89,6 +90,10 @@
 
 .sub_nav-item:hover {
     opacity: 0.8;
+}
+
+.sub_nav-item i {
+    margin-right: 5px;
 }
 
 .sub_nav-item:last-child {
@@ -154,7 +159,7 @@
 .product-container {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .product_item {
@@ -166,6 +171,12 @@
 .product_item:hover {
     background-color: #b71515;
     transform: translateY(-2px);
+    
+}
+
+.product_item-container {
+    border-bottom: 1px solid var(--border-color);
+    height: 100%;
 }
 
 .product_img {
@@ -195,18 +206,27 @@
 
 .banner-group {
    display: flex;
-   flex-wrap: nowrap;
+    flex: 1;
    justify-content: space-between;
    align-items: center;
 }
 
+.banner-item {
+    width: 79%;    
+}
+
 .banner-img {
-    width: 100%;
+    max-width: 100%;
+}
+
+.banner-item-small{
+    width: 20%;
 }
 
 .banner-item_sml-img {
-   display: block;
+    max-width: 100%;
 }
+
 /* =====profile====== */
 
 .profile{
@@ -226,11 +246,20 @@
     margin: 40px 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    
+    justify-content: center;
 }
 
 .player_infor {
+    max-width: 80%;
+    margin-top: 10px;
+}
+
+
+.player-infor_container {
     background-color: #b71515;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /* ====heading profile====== */
@@ -353,6 +382,10 @@
     align-items: center;
 }
 
+.sponsor-logo {
+    margin: 25px 0;
+}
+
 .sponsor-logo_item {
   display: block;
 }
@@ -412,8 +445,8 @@
 
 .footer-contact_icon {
     display: flex;
-    margin-left: 20px;
-    width: 18%;
+    width: 20%;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -423,7 +456,7 @@
 }
 
 .footer_contact_icon-item i {
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     color: var(--text-color);
 }
 
