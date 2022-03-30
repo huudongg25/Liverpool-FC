@@ -20,7 +20,6 @@
 .header-logo {
     display: flex;
     align-items: center;
-    margin-right: 600px;
 }
 
 .header-logo_img {
@@ -31,18 +30,18 @@
 
 .nav {
     display: flex;
+    flex: 1;
     list-style: none;
-    width: 100%;
+    width: 70%;
     margin: 0;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     text-align: center;
 }
 
 .nav_item {
-    width: 14%;
     text-align: center;
-    margin: 0 10px;
+    margin: 0 25px;
 }
 
 .nav_item-link {
@@ -70,7 +69,7 @@
     list-style: none;
     border-radius: 3px;
     z-index: 1;
-    min-width: 150%;
+    min-width: 200%;
     margin-left: -15px;
     box-shadow: 0 0 2px #333;
 }
@@ -390,11 +389,12 @@
     flex: 1;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .footer-contact_item {
-   max-width: 100%;
+    max-width: 100%;
+    margin: 0 10px;
     display: block;
     text-align: center;
 }
