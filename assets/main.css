@@ -14,6 +14,7 @@
     justify-content: space-between;
     flex: 1;
     height: 100px;
+    position: relative;
 }
 
 /* ========heading-logo========== */
@@ -109,6 +110,119 @@
     animation: fadeIn ease-in-out 0.5s;
 }
 
+.header_bar {
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    line-height: 100px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header_bar i {
+    font-size: 3rem;
+    color: var(--white-color);
+}
+
+/* =====nav mobile======= */
+
+.header_overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0 , 0 , 0.3);
+    animation: fadeIn ease-in .2s;
+}
+
+.nav_mobile {
+    margin: 0;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    background-color: #8b0606;
+    box-shadow: 0 0 5px #333;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+.nav_item-mobile {
+    margin: 40px 0;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav_item-mobile:hover {
+    opacity: 0.5;
+}
+
+.nav_item-mobile:last-child {
+    border: none;
+    position: relative;
+}
+
+.nav_item-mobile:last-child:hover .sub_nav-mobile {
+    display: block;
+}
+
+
+.nav_item-mobile-link {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    width: 100%;
+    display: block;
+}
+
+.sub_nav-mobile {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    list-style: none;
+}
+
+.sub_nav-mobile-item {
+    padding: 15px 0;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav_mobile-icon {
+    cursor: pointer;
+}
+
+.nav_mobile-icon i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2.5rem;
+    padding: 10px;
+    color: var(--white-color);
+}
+
+.nav-input{
+    display: none;
+}
+.nav-input:checked ~ .header_overlay {
+    display: block;
+}
+
+.nav-input:checked ~ .nav_mobile {
+    transform: translateX(0%);
+    opacity: 1;
+}
 
 /* ======header-nav===== */
 
@@ -143,6 +257,7 @@
 }
 
 .heading-news {
+    
     cursor: pointer;
 }
 
@@ -238,6 +353,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
 }
 
 /* =====Player-profile======= */

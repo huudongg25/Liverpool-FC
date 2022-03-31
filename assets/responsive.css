@@ -1,0 +1,60 @@
+/* =====PC====== */
+@media (min-width:64em) {
+
+}
+
+
+/* =====Tablet========== */
+@media (min-width:46.25em) and (max-width:64em) {
+    .nav {
+        display: none;
+    }
+
+    .header_bar {
+        display: block;
+    }
+}
+
+
+/* ======Mobile====== */
+
+@media (max-width:46.1875em) {
+    .nav {
+        display: none;
+    }
+
+    .header_bar {
+        display: block;
+        margin-right: 15px;
+    }
+
+    .heading-news {
+        margin-right: 10px;
+    }
+
+    .product-container {
+        margin: 0 5px;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .footer-contact_title {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-contact_icon {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-copyright {
+        margin: 0 5px;
+    }
+}
