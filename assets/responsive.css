@@ -23,6 +23,10 @@
         display: none;
     }
 
+    .header-logo {
+        margin-left: 15px;
+    }
+
     .header_bar {
         display: block;
         margin-right: 15px;
