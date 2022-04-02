@@ -137,6 +137,7 @@
     bottom: 0;
     background-color: rgba(0, 0 , 0 , 0.3);
     animation: fadeIn ease-in .2s;
+    -webkit-animation: fadeIn ease-in .2s;
 }
 
 .nav_mobile {
@@ -152,6 +153,7 @@
     transform: translateX(100%);
     opacity: 0;
     transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
 }
 
 .nav_item-mobile {
