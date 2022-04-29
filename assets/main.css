@@ -627,7 +627,7 @@
     box-shadow: 0 0 10px #000;
     display: none;
     align-items: center;
-    animation: all ease-in 0.8s;
+    animation: all linear 0.8s;
 }
 
 .modal_container {
@@ -640,7 +640,7 @@
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
-    animation: slide ease-in 0.4s;
+    animation: slide linear 0.4s;
 }
 
 .modal-header {
@@ -648,7 +648,20 @@
     width: 100%;
     height: 30vh;
     text-align: center;
-    
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    font-size: 3rem;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.modal-close:hover {
+    font-size: 3.5rem;
 }
 
 .modal_heading {
@@ -735,7 +748,9 @@
     font-style: italic;
     font-size: 1.4rem;
     cursor: pointer;
+    border-radius: 5px;
 }
+
 .modal_join-footer {
     text-align: center;
     margin-top: 40px;

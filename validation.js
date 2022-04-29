@@ -1,25 +1,4 @@
 
-// Gọi hàm validator để dùng:
-// Validator({
-//     form:'#form-1',   ======id của thẻ form
-//     formGroupSelector:'.form-group', ====form input cha
-//     errorSelector: '.form-message',  =====message báo lỗi
-//     rules: [     ===== các rule
-//         Validator.isRequired('#fullname'), ====các rule(selector các thẻ html)
-//         Validator.isRequired('#email'),
-//         Validator.isEmail('#email'),
-//         Validator.minLength('#password',6),
-//         Validator.isRequired('#password_confirmation'),
-//         Validator.isConfirmed('#password_confirmation',function(){
-//             return document.querySelector('#form-1 #password').value
-//         }),
-//     ],
-//     onSubmit: function(data) {  ==========Gửi data từ nút submit    
-//         console.log(data)
-//     }      
-// })
-
-
 //Validator Object
 function Validator(options) {
     

@@ -4,6 +4,7 @@ const modal = $('.modal')
 const loginInput = $('#loginInput')
 const linkInput = $('#loginInput a')
 const modalContainer = $('.modal_container')
+const closeBtn = $('.modal-close')
 
 // ===login======
 loginInput.addEventListener('click',function(){
@@ -11,6 +12,10 @@ loginInput.addEventListener('click',function(){
 })
 
 modal.onclick = function() {
+    modal.style.display ='none'
+}
+
+closeBtn.onclick = function() {
     modal.style.display ='none'
 }
 
