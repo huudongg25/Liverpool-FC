@@ -90,8 +90,6 @@
 }
 
 
-
-
 .sub_nav-item:hover {
     opacity: 0.8;
 }
@@ -597,3 +595,158 @@
     line-height: 1.5;
 }
 
+/* ============Modal========= */
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0 , 0 , 0.5);
+    box-shadow: 0 0 10px #000;
+    display: none;
+    align-items: center;
+    animation: all ease-in 0.8s;
+}
+
+.modal_container {
+    width: 80vw;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    animation: slide ease-in 0.4s;
+}
+
+.modal-header {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    
+}
+
+.modal_heading {
+    color: #DC0714;
+    font-size: 3.9rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.modal_join {
+    display: block;
+    line-height: 1.9rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #4a4a49;
+    margin-top: 20px;
+}
+
+.modal_join a {
+    display: inline-block;
+    text-decoration: underline;
+    color: #DC0b18;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.modal-body {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-top: 20px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.form-control {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    outline:#911712;
+    border:1px solid #C9ced0;
+    border-radius: 7px;
+    padding: 15px 10px;
+    font-size: 1.3rem;
+}
+
+.form-message{
+    color:  rgb(255, 62, 62);
+    margin-top: 4px;
+    font-size: 1.1rem;
+}
+
+.form-label {
+    color: #747473;
+    font-size: 1.1rem;
+}
+
+.forgot_pass {
+    font-style: italic;
+    text-decoration: underline;
+    color: #DC0b18;
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.form-submit {
+    width: 25%;
+    border: none;
+    padding: 15px;
+    background-color: #e0e0e0;
+    color: #9b9999;
+    font-style: italic;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.modal_join-footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #4a4a49;
+    display: block;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+.modal_join-footer a {
+    text-decoration: underline;
+    color: #DC0b18;
+    font-weight: 700;
+    font-style: italic;
+}
