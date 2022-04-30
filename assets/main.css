@@ -486,6 +486,10 @@
     padding: 50px 0;
 }
 
+.memory_item.show {
+    animation: slideX linear 0.9s;
+}
+
 .memory_item-img {
     width: 100%;
 }
@@ -599,11 +603,22 @@
 @keyframes slide {
     from {
         opacity: 0;
-        transform: translateY(-500px);
+        transform: translateY(-200px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes slideX {
+    from {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
@@ -627,7 +642,7 @@
     box-shadow: 0 0 10px #000;
     display: none;
     align-items: center;
-    animation: all linear 0.8s;
+    animation: fadeIn linear 0.5s;
 }
 
 .modal_container {
@@ -640,7 +655,7 @@
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
-    animation: slide linear 0.4s;
+    animation: slide linear 0.2s;
 }
 
 .modal-header {

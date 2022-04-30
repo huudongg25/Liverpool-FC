@@ -20,6 +20,13 @@
         font-size: 3.8rem;
     }
 
+    .form-group {
+        width: 40%;
+    }
+
+    .form-submit {
+        width: 40%;
+    }
 }
 
 
@@ -75,5 +82,13 @@
 
     .modal-close {
         font-size: 3.8rem;
+    }
+
+    .form-group {
+        width: 80%;
+    }
+
+    .form-submit {
+        width: 80%;
     }
 }
