@@ -62,7 +62,6 @@
 .nav_item:hover .nav_item-link {
     color:rgb(207, 207, 207);
     transform: translateY(-1px);
-    opacity: 0.7;
 }
 
 .nav_item:last-child {
